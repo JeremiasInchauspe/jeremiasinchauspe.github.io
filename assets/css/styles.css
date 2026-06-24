@@ -136,7 +136,9 @@ a:focus {
 .profile-photo {
   width: 190px;
   aspect-ratio: 1;
+  border: 1px solid var(--line);
   border-radius: 6px;
+  background: #eef6fb;
   object-fit: cover;
   box-shadow: var(--shadow);
 }
