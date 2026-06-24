@@ -1,18 +1,86 @@
-# Jeremias Inchauspe - GitHub Pages Site
+# Jeremias Inchauspe
 
-Static personal academic website, ready for GitHub Pages.
+TLDR:
+- This repository hosts my personal academic website: <https://jeremiasinchauspe.github.io/>.
+- The site is a lightweight static GitHub Pages website. No Jekyll, Node, or build step is required.
+- Edit `index.html` for the home/about page.
+- Edit `publications.html`, `teaching.html`, and `cv.html` for the main sections.
+- Replace the public CV at `assets/files/CurriculumVitae_InchauspeJeremias.pdf`.
+- Replace the profile photo in `assets/img/`.
+- Edit visual styling in `assets/css/styles.css`.
+- Commit and push to `main`; GitHub Pages publishes the site automatically.
 
-## Publish
+<div align="center">
 
-1. Create a public repository named `YOUR-GITHUB-USERNAME.github.io`.
-2. Upload every file from this folder to the repository root.
-3. Commit to the `main` branch.
-4. Open `https://YOUR-GITHUB-USERNAME.github.io`.
+[![Website](https://img.shields.io/badge/website-live-0a66c2)](https://jeremiasinchauspe.github.io/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-active-2ea44f)](https://pages.github.com/)
+[![Static HTML](https://img.shields.io/badge/static-HTML%20%2B%20CSS-orange)](#repository-structure)
 
-## Edit
+**Personal academic website for Jeremias Inchauspe.**
 
-- Main page: `index.html`
+</div>
+
+## About
+
+This is a small static site for academic profile, publications, teaching, and CV updates. It is inspired by the clean academic homepage structure used in sites such as Daniel M. Low's academic website, but implemented as plain HTML, CSS, and JavaScript for easier maintenance.
+
+## Repository Structure
+
+```text
+.
+|-- index.html                              # Home/about page
+|-- publications.html                       # Publications and conference outputs
+|-- teaching.html                           # Teaching and training
+|-- cv.html                                 # CV landing page
+|-- research.html                           # Research timeline, kept as a direct page
+|-- favicon.svg                             # Browser tab icon
+|-- assets/
+|   |-- css/styles.css                      # Site styles
+|   |-- js/site.js                          # Theme toggle and copy-email behavior
+|   |-- img/                                # Profile image
+|   `-- files/CurriculumVitae_InchauspeJeremias.pdf
+`-- .nojekyll                               # Serve static files directly on GitHub Pages
+```
+
+## Local Preview
+
+From the repository root:
+
+```powershell
+python -m http.server 8000 --bind 127.0.0.1
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000/
+```
+
+## Updating The Site
+
+Most edits are direct HTML changes:
+
+- Home/about text: `index.html`
+- Navigation links: the `<nav>` block in each HTML file
 - Publications: `publications.html`
 - Teaching: `teaching.html`
-- CV page: `cv.html`
-- Styles: `assets/css/styles.css`
+- Downloadable CV: `assets/files/CurriculumVitae_InchauspeJeremias.pdf`
+- Profile photo: `assets/img/profile-jeremias-fondo-celeste-close.jpg`
+- Colors, spacing, and layout: `assets/css/styles.css`
+
+After editing:
+
+```powershell
+git status
+git add .
+git commit -m "Update site"
+git push
+```
+
+GitHub Pages will rebuild and publish the site from the `main` branch.
+
+## Notes
+
+- The site is public and served by GitHub Pages.
+- The repository is intentionally simple so it can be edited without a build system.
+- Keep personal contact information limited to the institutional email address.
