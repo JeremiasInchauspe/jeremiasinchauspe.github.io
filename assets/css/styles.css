@@ -80,7 +80,7 @@ a:focus {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
 
 .nav-links a {
@@ -127,16 +127,17 @@ a:focus {
 
 .profile {
   display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  align-items: start;
   gap: 28px;
   margin-bottom: 34px;
 }
 
-.profile-mark {
-  width: 118px;
-  height: 118px;
-  border-radius: 8px;
+.profile-photo {
+  width: 190px;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  object-fit: cover;
   box-shadow: var(--shadow);
 }
 
@@ -261,6 +262,22 @@ p {
   padding: 5px 9px;
 }
 
+.interest-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.interest-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.interest-table tr:last-child td {
+  border-bottom: 0;
+}
+
 .pub-list {
   margin: 0;
   padding-left: 22px;
@@ -383,9 +400,13 @@ p {
     gap: 18px;
   }
 
-  .profile-mark {
-    width: 96px;
-    height: 96px;
+  .profile-copy {
+    grid-row: 2;
+  }
+
+  .profile-photo {
+    width: 128px;
+    grid-row: 1;
   }
 
   .timeline-item {

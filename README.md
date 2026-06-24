@@ -13,8 +13,9 @@ Static personal academic website, ready for GitHub Pages.
 
 - Main page: `index.html`
 - Publications: `publications.html`
-- Research: `research.html`
+- Code: `code.html`
 - Teaching: `teaching.html`
+- Resources: `resources.html`
 - CV page: `cv.html`
 - Styles: `assets/css/styles.css`
 
