@@ -192,12 +192,28 @@ p {
 }
 
 .link-row a,
+.copy-link,
 .button-link {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
   border-bottom: 1px solid currentColor;
   line-height: 1;
+}
+
+.copy-link {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.copy-link:hover,
+.copy-link:focus {
+  color: var(--accent-strong);
 }
 
 .button-link {
