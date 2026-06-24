@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Jeremias Inchauspe monogram</title>
+  <desc id="desc">A simple square monogram with the initials JI.</desc>
+  <rect width="240" height="240" rx="8" fill="#202124"/>
+  <rect x="18" y="18" width="204" height="204" rx="10" fill="#ffffff"/>
+  <path d="M72 61h44v78c0 27-17 43-45 43-9 0-18-2-27-6l7-28c6 3 12 5 18 5 11 0 17-6 17-18V91H72V61z" fill="#b52222"/>
+  <path d="M151 61h34v118h-34V61z" fill="#202124"/>
+</svg>
