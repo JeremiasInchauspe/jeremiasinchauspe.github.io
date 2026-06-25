@@ -4,8 +4,7 @@ TLDR:
 - This repository hosts my personal academic website: <https://jeremiasinchauspe.github.io/>.
 - The site is a lightweight static GitHub Pages website. No Jekyll, Node, or build step is required.
 - Edit `index.html` for the home/about page.
-- Edit `publications.html`, `teaching.html`, and `cv.html` for the main sections.
-- Replace the public CV at `assets/files/CurriculumVitae_InchauspeJeremias.pdf`.
+- Edit `publications.html` and `teaching.html` for the main sections.
 - Replace the profile photo in `assets/img/`.
 - Edit visual styling in `assets/css/styles.css`.
 - Commit and push to `main`; GitHub Pages publishes the site automatically.
@@ -22,7 +21,7 @@ TLDR:
 
 ## About
 
-This is a small static site for academic profile, publications, teaching, and CV updates. It is inspired by the clean academic homepage structure used in sites such as Daniel M. Low's academic website, but implemented as plain HTML, CSS, and JavaScript for easier maintenance.
+This is a small static site for an academic profile, publications, teaching, and training updates. It is inspired by the clean academic homepage structure used in sites such as Daniel M. Low's academic website, but implemented as plain HTML, CSS, and JavaScript for easier maintenance.
 
 ## Repository Structure
 
@@ -31,14 +30,12 @@ This is a small static site for academic profile, publications, teaching, and CV
 |-- index.html                              # Home/about page
 |-- publications.html                       # Publications and conference outputs
 |-- teaching.html                           # Teaching and training
-|-- cv.html                                 # CV landing page
 |-- research.html                           # Research timeline, kept as a direct page
 |-- favicon.svg                             # Browser tab icon
 |-- assets/
 |   |-- css/styles.css                      # Site styles
-|   |-- js/site.js                          # Theme toggle and copy-email behavior
+|   |-- js/site.js                          # Theme toggle and publication search
 |   |-- img/                                # Profile image
-|   `-- files/CurriculumVitae_InchauspeJeremias.pdf
 `-- .nojekyll                               # Serve static files directly on GitHub Pages
 ```
 
@@ -64,7 +61,6 @@ Most edits are direct HTML changes:
 - Navigation links: the `<nav>` block in each HTML file
 - Publications: `publications.html`
 - Teaching and training: `teaching.html`
-- Downloadable CV: `assets/files/CurriculumVitae_InchauspeJeremias.pdf`
 - Profile photo: `assets/img/profile-jeremias-fondo-celeste-close.jpg`
 - Colors, spacing, and layout: `assets/css/styles.css`
 
