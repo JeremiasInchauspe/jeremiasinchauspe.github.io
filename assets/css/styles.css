@@ -173,21 +173,6 @@ p {
   color: var(--muted);
 }
 
-.link-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 16px;
-  margin-top: 16px;
-}
-
-.link-row a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  border-bottom: 1px solid currentColor;
-  line-height: 1;
-}
-
 .content-section {
   padding: 28px 0;
   border-top: 1px solid var(--line);
@@ -262,6 +247,61 @@ p {
 
 .interest-table tr:last-child td {
   border-bottom: 0;
+}
+
+.contact-section {
+  padding: 34px 0 18px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-link svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.contact-link span {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.contact-section p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .pub-list {
