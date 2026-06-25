@@ -337,6 +337,10 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.publication-year h3 {
+  margin-top: 0;
+}
+
 .pub-list li {
   padding-left: 4px;
 }
