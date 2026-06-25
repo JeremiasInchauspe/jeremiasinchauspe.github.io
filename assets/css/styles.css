@@ -180,7 +180,7 @@ p {
 }
 
 .content-section.tight-bottom {
-  padding-bottom: 12px;
+  padding-bottom: 4px;
 }
 
 .sr-only {
@@ -236,6 +236,10 @@ p {
 
 .interest-table tr:last-child td {
   border-bottom: 0;
+}
+
+.content-section.tight-bottom .interest-table tr:last-child td {
+  padding-bottom: 4px;
 }
 
 .contact-section {
