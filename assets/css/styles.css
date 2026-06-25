@@ -234,6 +234,15 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .page-heading {
   margin-bottom: 30px;
 }
@@ -301,6 +310,33 @@ p {
   padding-left: 22px;
 }
 
+.publication-browser {
+  padding: 0 0 24px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 520px;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  padding: 8px 12px;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  outline: 2px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  outline-offset: 2px;
+}
+
+.publication-year {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
 .pub-list li {
   padding-left: 4px;
 }
@@ -315,13 +351,25 @@ p {
 
 .pub-tags {
   margin-bottom: 9px;
+  max-width: 100%;
   padding: 4px 8px;
+  line-height: 1.35;
 }
 
 .pub-title {
   margin-bottom: 8px;
   color: var(--text);
   font-weight: 700;
+}
+
+.pub-entry p:last-child {
+  margin-bottom: 0;
+}
+
+.empty-state {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
 }
 
 .timeline {
