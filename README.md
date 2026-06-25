@@ -21,7 +21,7 @@ TLDR:
 
 ## About
 
-This is a small static site for an academic profile, publications, teaching, and course updates. It is inspired by the clean academic homepage structure used in sites such as Daniel M. Low's academic website, but implemented as plain HTML, CSS, and JavaScript for easier maintenance.
+This is a small static site for an academic profile, publications, and teaching updates. It is inspired by the clean academic homepage structure used in sites such as Daniel M. Low's academic website, but implemented as plain HTML, CSS, and JavaScript for easier maintenance.
 
 ## Repository Structure
 
@@ -29,7 +29,7 @@ This is a small static site for an academic profile, publications, teaching, and
 .
 |-- index.html                              # Home/about page
 |-- publications.html                       # Publications and conference outputs
-|-- teaching.html                           # Teaching and courses
+|-- teaching.html                           # Teaching
 |-- research.html                           # Research timeline, kept as a direct page
 |-- favicon.svg                             # Browser tab icon
 |-- assets/
@@ -60,7 +60,7 @@ Most edits are direct HTML changes:
 - Home/about text: `index.html`
 - Navigation links: the `<nav>` block in each HTML file
 - Publications: `publications.html`
-- Teaching and courses: `teaching.html`
+- Teaching: `teaching.html`
 - Profile photo: `assets/img/profile-jeremias-fondo-celeste-close.jpg`
 - Colors, spacing, and layout: `assets/css/styles.css`
 
