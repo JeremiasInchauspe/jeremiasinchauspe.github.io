@@ -179,12 +179,16 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.content-section.tight-bottom {
+  padding-bottom: 12px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -198,12 +202,6 @@ p {
   text-transform: lowercase;
 }
 
-.two-column {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 38px;
-}
-
 .compact-list {
   margin: 0;
   padding-left: 19px;
@@ -213,13 +211,6 @@ p {
   margin-top: 11px;
 }
 
-.tag-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tag-grid span,
 .pub-tags {
   display: inline-flex;
   align-items: center;
@@ -228,9 +219,6 @@ p {
   background: var(--tag);
   color: var(--muted);
   font-size: 14px;
-}
-
-.tag-grid span {
   padding: 5px 9px;
 }
 
@@ -461,7 +449,6 @@ p {
   }
 
   .profile,
-  .two-column,
   .timeline-item {
     grid-template-columns: 1fr;
   }
