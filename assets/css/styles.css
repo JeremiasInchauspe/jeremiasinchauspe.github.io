@@ -117,9 +117,9 @@ a:focus {
 .profile {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
-  align-items: start;
-  gap: 28px;
-  margin-bottom: 34px;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 22px;
 }
 
 .profile-photo {
@@ -163,6 +163,7 @@ p {
 
 .subtitle {
   margin-top: 10px;
+  margin-bottom: 6px;
   color: var(--text);
   font-size: 19px;
   line-height: 1.45;
@@ -250,7 +251,7 @@ p {
 }
 
 .contact-section {
-  padding: 34px 0 18px;
+  padding: 38px 0 18px;
   border-top: 1px solid var(--line);
   text-align: center;
 }
@@ -258,16 +259,16 @@ p {
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 14px;
-  margin-bottom: 12px;
+  gap: 16px;
+  margin-bottom: 14px;
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--surface);
@@ -283,8 +284,8 @@ p {
 }
 
 .contact-link svg {
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -293,7 +294,7 @@ p {
 }
 
 .contact-link span {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
