@@ -59,22 +59,11 @@ a:focus {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: min(980px, calc(100% - 32px));
   min-height: 62px;
   margin: 0 auto;
   gap: 24px;
-}
-
-.brand {
-  color: var(--text);
-  font-size: 18px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.brand:hover {
-  color: var(--text);
 }
 
 .nav-links {
