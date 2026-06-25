@@ -63,7 +63,7 @@ Most edits are direct HTML changes:
 - Home/about text: `index.html`
 - Navigation links: the `<nav>` block in each HTML file
 - Publications: `publications.html`
-- Teaching: `teaching.html`
+- Teaching and training: `teaching.html`
 - Downloadable CV: `assets/files/CurriculumVitae_InchauspeJeremias.pdf`
 - Profile photo: `assets/img/profile-jeremias-fondo-celeste-close.jpg`
 - Colors, spacing, and layout: `assets/css/styles.css`
