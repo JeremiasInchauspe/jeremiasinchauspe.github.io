@@ -84,20 +84,12 @@ a:focus {
   text-decoration: none;
 }
 
-.nav-toggle,
 .theme-toggle {
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
   font: inherit;
-}
-
-.nav-toggle {
-  display: none;
-  min-width: 40px;
-  min-height: 36px;
-  padding: 6px 12px;
 }
 
 .theme-toggle {
@@ -436,10 +428,6 @@ p {
     min-height: 58px;
     gap: 12px;
     overflow-x: auto;
-  }
-
-  .nav-toggle {
-    display: none;
   }
 
   .nav-links {
