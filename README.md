@@ -31,6 +31,8 @@ This is a small static site for an academic profile, publications, and teaching 
 |-- publications.html                       # Publications and conference outputs
 |-- teaching.html                           # Teaching
 |-- research.html                           # Research timeline, kept as a direct page
+|-- robots.txt                              # Search crawler instructions
+|-- sitemap.xml                             # Search engine page index
 |-- favicon.svg                             # Browser tab icon
 |-- assets/
 |   |-- css/styles.css                      # Site styles

@@ -94,6 +94,7 @@ a:focus {
 
 .theme-toggle {
   display: inline-grid;
+  flex: 0 0 34px;
   width: 34px;
   height: 34px;
   place-items: center;
@@ -281,6 +282,13 @@ p {
   text-decoration: none;
 }
 
+.theme-toggle:focus-visible,
+.contact-link:focus-visible,
+.search-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .contact-link svg {
   width: 25px;
   height: 25px;
@@ -438,8 +446,7 @@ p {
     min-width: max-content;
   }
 
-  .nav-links a,
-  .nav-links .theme-toggle {
+  .nav-links a {
     width: auto;
     min-height: auto;
     border: 0;
@@ -449,6 +456,7 @@ p {
 
   .theme-toggle {
     display: inline-grid;
+    flex: 0 0 34px;
     width: 34px;
     height: 34px;
     border: 1px solid var(--line);

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeremiasinchauspe.github.io/sitemap.xml
