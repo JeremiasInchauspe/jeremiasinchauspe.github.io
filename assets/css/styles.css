@@ -63,7 +63,6 @@ a:focus {
   width: min(980px, calc(100% - 32px));
   min-height: 62px;
   margin: 0 auto;
-  gap: 24px;
 }
 
 .nav-links {
@@ -85,20 +84,17 @@ a:focus {
 }
 
 .theme-toggle {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--text);
-  cursor: pointer;
-  font: inherit;
-}
-
-.theme-toggle {
   display: inline-grid;
   flex: 0 0 34px;
   width: 34px;
   height: 34px;
   place-items: center;
+  border: 1px solid var(--line);
   border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
   font-size: 17px;
 }
 
@@ -162,8 +158,7 @@ p {
   line-height: 1.45;
 }
 
-.location,
-.page-heading p {
+.location {
   color: var(--muted);
 }
 
@@ -194,7 +189,6 @@ p {
 }
 
 .page-heading h1 {
-  margin-bottom: 10px;
   font-size: 40px;
   text-transform: lowercase;
 }
@@ -243,12 +237,6 @@ p {
 
 .contact-icons {
   display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 14px;
-}
-
-.profile-contact-icons {
   width: max-content;
   justify-content: flex-start;
   justify-self: start;
@@ -257,17 +245,12 @@ p {
   margin-bottom: 0;
 }
 
-.profile-contact-icons .contact-link {
-  width: 48px;
-  height: 48px;
-}
-
 .contact-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border: 1px solid var(--line);
   border-radius: 50%;
   background: var(--surface);
@@ -290,8 +273,8 @@ p {
 }
 
 .contact-link svg {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -299,20 +282,11 @@ p {
   stroke-width: 2;
 }
 
-.profile-contact-icons .contact-link svg {
-  width: 23px;
-  height: 23px;
-}
-
 .contact-link span {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1;
-}
-
-.profile-contact-icons .contact-link span {
-  font-size: 19px;
 }
 
 .contact-section p {
@@ -391,10 +365,6 @@ p {
   color: var(--muted);
 }
 
-.timeline {
-  border-top: 1px solid var(--line);
-}
-
 .timeline-item {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
@@ -434,33 +404,14 @@ p {
   .nav {
     justify-content: flex-start;
     min-height: 58px;
-    gap: 12px;
     overflow-x: auto;
   }
 
   .nav-links {
-    display: flex;
     flex: 1;
     justify-content: flex-end;
     gap: 14px;
     min-width: max-content;
-  }
-
-  .nav-links a {
-    width: auto;
-    min-height: auto;
-    border: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .theme-toggle {
-    display: inline-grid;
-    flex: 0 0 34px;
-    width: 34px;
-    height: 34px;
-    border: 1px solid var(--line);
-    border-radius: 50%;
   }
 
   .page {

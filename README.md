@@ -30,7 +30,6 @@ This is a small static site for an academic profile, publications, and teaching 
 |-- index.html                              # Home/about page
 |-- publications.html                       # Publications and conference outputs
 |-- teaching.html                           # Teaching
-|-- research.html                           # Research timeline, kept as a direct page
 |-- robots.txt                              # Search crawler instructions
 |-- sitemap.xml                             # Search engine page index
 |-- favicon.svg                             # Browser tab icon
@@ -80,5 +79,5 @@ GitHub Pages will rebuild and publish the site from the `main` branch.
 ## Notes
 
 - The site is public and served by GitHub Pages.
-- The repository is intentionally simple so it can be edited without a build system.
+- The repository is intentionally limited to the three public pages and uses no build system.
 - Keep personal contact information limited to the institutional email address.
